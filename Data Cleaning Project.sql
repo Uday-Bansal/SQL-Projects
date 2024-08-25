@@ -42,8 +42,6 @@ Select *
 from layoffs_staging 
 where company = "&Open";
 
-
-
 Select * ,
 ROW_NUMBER() Over(
 	Partition BY company, location, 
@@ -66,7 +64,6 @@ CREATE TABLE `layoffs_staging2` (
   `funds_raised` double DEFAULT NULL,
   `row_num` INT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 
 SELECT *
 FROM layoffs_staging2;
