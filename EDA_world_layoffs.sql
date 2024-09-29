@@ -1,4 +1,4 @@
--- Data Exploratory Analysis
+-- Exploratory Data Analysis
 Select * from layoffs_staging2;
 
 SELECT MAX(total_laid_off)
@@ -21,7 +21,6 @@ FROM world_layoffs.layoffs_staging2
 WHERE  percentage_laid_off = 1
 ORDER BY funds_raised DESC;
 -- BritishVolt looks like an EV company, Quibi! I recognize that company - wow raised like 2 billion dollars and went under - ouch
-
 
 -- top 5 companies with biggest single layoffs --
 SELECT company, total_laid_off
